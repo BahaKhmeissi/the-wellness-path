@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 #overroot {
-  background: url("../images/dog.png") no-repeat;
+  background: url("../assets/images/dog.png") no-repeat;
   background-size: cover;
 }
 #root {
@@ -23,12 +23,12 @@ body {
   padding-bottom: 10em;
 }
 footer {
-  background: url("../images/insurance-footer-background.png") no-repeat;
+  background: url("../assets/images/insurance-footer-background.png") no-repeat;
   background-size: cover;
   height: 200px;
 }
 #underroot {
-  background: url("../images/space.jpg") no-repeat;
+  background: url("../assets/images/space.jpg") no-repeat;
   background-size: cover;
   /* height: 350px; */
 }
