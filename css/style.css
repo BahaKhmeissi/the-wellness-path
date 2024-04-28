@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 #overroot {
-  background: url("../assets/images/dog.png") no-repeat;
+  background: url("../assets/images/firstBg.png") no-repeat;
   background-size: cover;
 }
 #root {
@@ -28,7 +28,7 @@ footer {
   height: 200px;
 }
 #underroot {
-  background: url("../assets/images/space.jpg") no-repeat;
+  background: url("../assets/images/space2.jpg") no-repeat;
   background-size: cover;
   /* height: 350px; */
 }
