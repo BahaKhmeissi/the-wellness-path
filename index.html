@@ -29,8 +29,6 @@
 
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="./css/fontAwesome.css" />
-    <link rel="stylesheet" href="./css/light-box.css" />
     <link rel="stylesheet" href="./css/templatemo-style.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -109,7 +107,7 @@
   </head>
 
   <body>
-    <div id="overroot">
+    <!-- <div id="overroot">
       <div id="root">
         <div class="pageTitle">
           <div class="pageSubTitle">
@@ -126,7 +124,32 @@
           /></a>
         </div>
       </div>
+    </div> -->
+    <div id="overroot" class="container">
+      <img
+        src="./assets/images/firstBg.png"
+        alt="Background Image"
+        id="background-img"
+      />
+      <div id="root">
+        <div class="pageTitle">
+          <div class="pageSubTitle">
+            THE BRAIN POWER YOU WANT is NOT in a bottle, capsule or magic lamp.
+            It's In Your Brain Right Now.
+          </div>
+        </div>
+        <div style="text-align: center">
+          <a href="https://f54008hgh8updn61scwf1zts1i.hop.clickbank.net">
+            <img
+              id="mainImg"
+              src="./assets/images/playpick.png"
+              alt="clickhere"
+            />
+          </a>
+        </div>
+      </div>
     </div>
+
     <div class="supportHolder">
       <h2 style="font-weight: bold; margin-bottom: 1em">
         Supporting Clinical Studies:
@@ -222,7 +245,7 @@
     <footer>
       <div>
         <p class="hovWhite">Copyright &copy; ALl Rights Reserved</p>
-        <p class="hovWhite" style="padding-top: 10px">
+        <p class="hovWhite" style="padding-top: 10px; margin: 5px">
           <a href="/"
             >www.the-wellness-path.com @<span class="hovWhite" id="year"></span
           ></a>
@@ -335,10 +358,6 @@
         year.innerHTML = `  ${new Date().getFullYear()} `;
       }
     </script>
-
-    <script src="./js/vendor/bootstrap.min.js"></script>
-
-    <script src="./js/plugins.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
