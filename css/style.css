@@ -227,7 +227,8 @@ q {
     max-width: 90%;
   }
 }
-img {
+img,
+button {
   transition: all 0.4s ease-in-out;
 }
 #supportImg,
@@ -239,7 +240,6 @@ img {
   transform: scale(1.1);
   -webkit-filter: brightness(60%);
 }
-img:hover {
+#clickBtn:hover {
+  transform: scale(1.03);
 }
-
-/* add references as scroll bar  */
