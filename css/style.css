@@ -25,7 +25,7 @@ body {
 footer {
   background: url("../assets/images/insurance-footer-background.png") no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 250px;
 }
 #underroot {
   background: url("../assets/images/space2.jpg") no-repeat;
@@ -147,6 +147,11 @@ q {
   aspect-ratio: 3/2;
   object-fit: contain;
 }
+#facebookParagraph {
+  max-width: 50%;
+  padding-top: 30px;
+  margin: auto;
+}
 @media only screen and (max-width: 1050px) {
   .photo {
     width: 200px;
@@ -201,6 +206,12 @@ q {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  footer {
+    height: 320px;
+  }
+  #facebookParagraph {
+    max-width: 90%;
   }
 }
 img {
