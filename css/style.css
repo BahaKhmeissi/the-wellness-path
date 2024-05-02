@@ -417,5 +417,5 @@ button {
 }
 
 #gifBottom {
-  max-width: -webkit-fill-available !important;
+  max-width: 100% !important;
 }
