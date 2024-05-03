@@ -110,17 +110,15 @@
     <div id="overroot" class="container">
       <div id="root">
         <div class="pageTitle">
-          <!-- <div class="pageSubTitle">
-            THE BRAIN POWER YOU WANT is NOT in a bottle, capsule or magic lamp.
-            It's In Your Brain Right Now.
-          </div> -->
           <div class="pageSubTitle">
             Discover the 7-Second Brain Wave Unveiled by 4 Neuroscience Labs...
             That Pave the Way to Wealth Attraction
           </div>
         </div>
         <div style="text-align: center">
-          <a href="https://f54008hgh8updn61scwf1zts1i.hop.clickbank.net">
+          <a
+            href="https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl"
+          >
             <img
               id="mainImg"
               src="./assets/images/playpick.png"
@@ -210,7 +208,7 @@
         <button id="clickBtn" class="btn btn-outline btn-danger">
           <a
             style="all: unset; font-weight: bold"
-            href="https://f54008hgh8updn61scwf1zts1i.hop.clickbank.net"
+            href="https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl"
           >
             TAP HERE TO WATCH</a
           >
@@ -355,7 +353,6 @@
       }, 1000);
 
       function getCountdown() {
-        // find the amount of "seconds" between now and target
         var current_date = new Date().getTime();
         var seconds_left = (target_date - current_date) / 1000;
 
@@ -363,9 +360,8 @@
         seconds_left = seconds_left % 86400;
 
         if (seconds_left <= 0) {
-          // If countdown has reached 0 or negative, reload the page
           location.reload();
-          return; // Stop further execution
+          return;
         }
 
         hours = pad(parseInt(seconds_left / 3600));
@@ -398,6 +394,10 @@
       function pad(n) {
         return (n < 10 ? "0" : "") + n;
       }
+      $("#gifBottom").click(() => {
+        window.location.href =
+          "https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl";
+      });
     </script>
   </body>
 </html>
