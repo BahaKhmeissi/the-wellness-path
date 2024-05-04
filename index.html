@@ -38,7 +38,6 @@
     />
 
     <script src="./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-H3HG8PTT87"
@@ -55,10 +54,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
       jQuery(document).ready(function ($) {
-        URLModifier("tid"); // replace VTID to any key
+        URLModifier("tid");
       });
       function URLModifier(customKey) {
-        var searchKeyWord = "utm_campaign"; // replace utm_campaign to any key you want to search for
+        var searchKeyWord = "utm_campaign";
         var searchKeyWordUrl = getParamFromURL(searchKeyWord);
         if (searchKeyWordUrl) {
           $("a").each(function () {
@@ -111,8 +110,8 @@
       <div id="root">
         <div class="pageTitle">
           <div class="pageSubTitle">
-            Discover the 7-Second Brain Wave Unveiled by 4 Neuroscience Labs...
-            That Pave the Way to Wealth Attraction
+            Discover the 7-Second Brain Wave Unveiled by 4 Neuroscience Labs
+            That Pave the Way to Wealth Attraction...
           </div>
         </div>
         <div style="text-align: center">
@@ -133,7 +132,7 @@
         Here are 4 things you'll find out in this video.
       </div>
     </div>
-    <div class="container" id="fourExp" style="margin-top: 4em">
+    <div class="container" id="fourExp" style="margin-top: 2em">
       <div class="row firstSec">
         <div class="col-md-5">
           <h2 style="font-weight: bold">
@@ -188,7 +187,7 @@
     <div class="container" id="thirdHolder">
       Tap Below to Unlock The Hidden Secrets to Wealth Befor its gone👇
     </div>
-    <div id="lastSection" class="container">
+    <div id="lastSection" class="container text-center">
       <div id="countdown">
         <div
           id="tiles"
@@ -196,7 +195,7 @@
           style="display: flex; justify-content: center"
         ></div>
       </div>
-      <div style="text-align: center; margin-bottom: 1em">
+      <div style="text-align: center; margin-bottom: 2em">
         <img
           src="./assets/images/Vi_deo-preview-gift.gif"
           alt="secret video"
@@ -204,16 +203,13 @@
           id="gifBottom"
         />
       </div>
-      <div style="text-align: center">
-        <button id="clickBtn" class="btn btn-outline btn-danger">
-          <a
-            style="all: unset; font-weight: bold"
-            href="https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl"
-          >
-            TAP HERE TO WATCH</a
-          >
-        </button>
-      </div>
+      <a
+        id="clickBtn"
+        class="boxShadow"
+        href="https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl"
+      >
+        <span>Activate Your Brain Wave Now</span>
+      </a>
     </div>
 
     <footer>
@@ -265,7 +261,9 @@
       <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header">
-          <h3 class="header-title">Say hello to <em>The Welness Path</em></h3>
+          <h3 class="mod-head header-title">
+            Say hello to <em style="color: aqua">The Welness Path</em>
+          </h3>
           <div class="close-btn">
             <img src="./assets/images/close_contact.png" alt="" />
           </div>
@@ -340,64 +338,5 @@
       }
     </script>
     <script src="./js/main.js"></script>
-    <script>
-      var target_date = new Date().getTime() + 25 * 3600 * 48; // set the countdown date
-      var days, hours, minutes, seconds; // variables for time units
-
-      var countdown = document.getElementById("tiles"); // get tag element
-
-      getCountdown();
-
-      setInterval(function () {
-        getCountdown();
-      }, 1000);
-
-      function getCountdown() {
-        var current_date = new Date().getTime();
-        var seconds_left = (target_date - current_date) / 1000;
-
-        days = pad(parseInt(seconds_left / 86400));
-        seconds_left = seconds_left % 86400;
-
-        if (seconds_left <= 0) {
-          location.reload();
-          return;
-        }
-
-        hours = pad(parseInt(seconds_left / 3600));
-        seconds_left = seconds_left % 3600;
-
-        minutes = pad(parseInt(seconds_left / 60));
-        seconds = pad(parseInt(seconds_left % 60));
-
-        countdown.innerHTML = `
-            <div class="fomo">
-              <span class="fomoSpans">${days}</span>
-              <div class="time_data">days</div>
-            </div>
-            <div class="fomo">
-              <span class="fomoSpans">${hours}</span>
-              <div class="time_data">hours</div>
-            </div>
-            <div class="fomo">
-              <span class="fomoSpans">${minutes}</span>
-              <div class="time_data">minutes</div>
-            </div>
-            <div class="fomo">
-              <span class="fomoSpans">${seconds}</span>
-              <div class="time_data">seconds</div>
-            </div>
-              
-          `;
-      }
-
-      function pad(n) {
-        return (n < 10 ? "0" : "") + n;
-      }
-      $("#gifBottom").click(() => {
-        window.location.href =
-          "https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl";
-      });
-    </script>
   </body>
 </html>
