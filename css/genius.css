@@ -20,17 +20,19 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/010/879/691/non_2x/yoga-buddha-spiritual-meditation-graphic-png.png");
-  background-position: top;
-  opacity: 0.03;
-  z-index: 1;
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/010/879/691/non_2x/yoga-buddha-spiritual-meditation-graphic-png.png"); */
+  background-image: url("https://healthbalancedlife.com/hosted/images/96/47e1ff2f0a491cb91ce08081990d31/Fundo-GW-V2.png");
+  /* background-position: top; */
+  background-size: cover;
+  /* opacity: 0.9; */
+  z-index: -1;
   pointer-events: none;
 }
 
 #overroot {
   position: relative;
   width: 100%;
-  background-color: #d0f0fd;
+  /* background-color: #d0f0fd; */
   padding-bottom: 2em;
   /* height: 100%; */
 }
@@ -41,6 +43,11 @@ body {
   font-size: 25px;
   text-align: center;
   color: white;
+}
+#thirdHolder {
+  border-radius: 10px;
+  width: fit-content;
+  cursor: pointer;
 }
 
 #theSecret {
@@ -150,7 +157,7 @@ q {
 }
 .pageSubTitle {
   font-size: 50px;
-  color: black;
+  color: white;
   width: 70%;
   margin: auto;
   font-weight: bolder;
@@ -226,6 +233,13 @@ q {
   margin-bottom: 4em;
 }
 @media only screen and (max-width: 1050px) {
+  #thirdHolder {
+    margin: 2px;
+    font-size: 20px;
+  }
+  #secretQ {
+    color: rgb(202, 0, 0);
+  }
   #theSecret {
     margin: 5px 1px 20px 1px !important;
   }
@@ -250,7 +264,7 @@ q {
     padding: 0.5em;
     margin-bottom: 2.5em;
     background-color: rgb(28, 43, 97);
-    background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D");
+    /* background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D"); */
     background-size: contain;
   }
   .photo {
@@ -304,7 +318,7 @@ q {
   }
   #secondHolder {
     padding: 10px;
-    background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D");
+    /* background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D"); */
     background-size: contain;
   }
   #ritualTitle {
