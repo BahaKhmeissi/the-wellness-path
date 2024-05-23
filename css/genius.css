@@ -13,6 +13,20 @@ body {
   position: relative;
 }
 
+#overroot::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/010/879/691/non_2x/yoga-buddha-spiritual-meditation-graphic-png.png");
+  background-position: top;
+  opacity: 0.03;
+  z-index: 1;
+  pointer-events: none;
+}
+
 #overroot {
   position: relative;
   width: 100%;
@@ -29,6 +43,11 @@ body {
   color: white;
 }
 
+#theSecret {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
 #background-img {
   position: absolute;
   top: 0;
@@ -43,7 +62,7 @@ body {
   margin-bottom: 2em;
 }
 footer {
-  height: 400px;
+  height: 350px;
   background-color: #1c2b61;
 }
 
@@ -114,8 +133,8 @@ q {
 #clickBtn {
   all: unset;
   cursor: pointer;
-  width: 70%;
-  padding: 15px;
+  width: 85%;
+  padding: 20px;
   font-weight: bold;
   margin: auto;
 
@@ -136,7 +155,7 @@ q {
   margin: auto;
   font-weight: bolder;
   line-height: 1.5em;
-  font-family: Roboto, Helvetica, sans-serif !important;
+  font-family: monospace;
 }
 #mainImg {
   max-width: 800px;
@@ -207,6 +226,15 @@ q {
   margin-bottom: 4em;
 }
 @media only screen and (max-width: 1050px) {
+  #theSecret {
+    margin: 5px 1px 20px 1px !important;
+  }
+
+  #overroot::before {
+    opacity: 0.06;
+    z-index: 1;
+  }
+
   .firstSec {
     margin-bottom: 0em;
   }
@@ -220,11 +248,17 @@ q {
   }
   .pageTitle {
     padding: 0.5em;
-    margin-bottom: 0.75em;
+    margin-bottom: 2.5em;
+    background-color: rgb(28, 43, 97);
+    background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D");
+    background-size: contain;
   }
   .photo {
     width: 200px;
     margin-bottom: 1em;
+  }
+  #overroot {
+    padding: 0;
   }
   #root {
     max-width: 100% !important;
@@ -235,10 +269,12 @@ q {
     padding: 5px;
   }
   .pageSubTitle {
-    font-size: 32px;
+    font-size: 26px;
     width: 100%;
     margin-top: 1em;
     margin-bottom: 1em;
+    color: white;
+    padding: 5px;
   }
   #nasaPic {
     width: 100%;
@@ -263,7 +299,13 @@ q {
     font-size: 18px;
   }
   #mainImg {
-    max-width: 100%;
+    max-width: 90%;
+    margin-bottom: 1.5em;
+  }
+  #secondHolder {
+    padding: 10px;
+    background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D");
+    background-size: contain;
   }
   #ritualTitle {
     font-size: 27px;
@@ -293,8 +335,8 @@ button,
   cursor: pointer;
 }
 #mainImg:hover {
-  transform: scale(1.1);
-  -webkit-filter: brightness(60%);
+  transform: scale(1.008);
+  -webkit-filter: brightness(70%);
 }
 #clickBtn:hover {
   transform: scale(1.03);
