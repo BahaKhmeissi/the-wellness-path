@@ -1,5 +1,6 @@
 var target_date = new Date().getTime() + 55 * 3600 * 48; // set the countdown date
 var days, hours, minutes, seconds; // variables for time units
+let june26Date = new Date(new Date().getFullYear(), 5, 26);
 
 var countdown = document.getElementById("tiles"); // get tag element
 
@@ -11,7 +12,7 @@ setInterval(function () {
 
 function getCountdown() {
   var current_date = new Date().getTime();
-  var seconds_left = (target_date - current_date) / 1000;
+  var seconds_left = (june26Date - current_date) / 1000;
 
   days = pad(parseInt(seconds_left / 86400));
   seconds_left = seconds_left % 86400;
