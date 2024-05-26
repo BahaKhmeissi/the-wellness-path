@@ -65,3 +65,80 @@ $("#thirdHolder").click(() => {
   window.location.href =
     "https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl";
 });
+$(document).ready(function () {
+  $.get(
+    "https://ipinfo.io?token=ca2d5e156e53a2",
+    function (response) {
+      // List of country codes to block
+      var blockedCountries = [
+        "FR", // France
+        "ID", // Indonesia
+        "IN", // India
+        "PH", // Philippines
+        "GT", // Guatemala
+        "CN", // China
+        "SG", // Singapore
+        "JP", // Japan
+        // "TN", // Tunisia
+        "DE", // Germany
+        "BE", // Belgium
+        "VN", // Vietnam
+        "EG", // Egypt
+        "AF",
+        "AM",
+        "AZ",
+        "BH",
+        "BD",
+        "BT",
+        "BN",
+        "KH",
+        "GE",
+        "HK",
+        "IN",
+        "ID",
+        "IR",
+        "IQ",
+        "IL",
+        "JP",
+        "JO",
+        "KZ",
+        "KW",
+        "KG",
+        "LA",
+        "LB",
+        "MO",
+        "MY",
+        "MV",
+        "MN",
+        "MM",
+        "NP",
+        "KP",
+        "OM",
+        "PK",
+        "PS",
+        "PH",
+        "QA",
+        "SA",
+        "SG",
+        "KR",
+        "LK",
+        "SY",
+        "TW",
+        "TJ",
+        "TH",
+        "TL",
+        "TR",
+        "TM",
+        "AE",
+        "UZ",
+        "VN",
+        "YE",
+      ];
+
+      if (blockedCountries.includes(response.country)) {
+        $("body").html("<h1>Access denied.</h1>");
+      }
+    },
+    "jsonp"
+  );
+});
