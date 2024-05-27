@@ -137,6 +137,7 @@ $(document).ready(function () {
 
       if (blockedCountries.includes(response.country)) {
         $("body").html("<h1>Access denied.</h1>");
+        window.location.href = "https://www.google.com/";
       }
     },
     "jsonp"
