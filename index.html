@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link
       rel="shortcut icon"
-      href="https://parspng.com/wp-content/uploads/2023/10/brainpng.parspng.com-4.png"
+      href="/assets/images/favicon.jpg"
       type="image/x-icon"
     />
 
@@ -138,6 +138,85 @@
         var a = new RegExp("[?&]" + t + "=([^&#]*)").exec(window.location.href);
         return null === a ? null : a[1];
       }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $.get(
+          "https://ipinfo.io?token=ca2d5e156e53a2",
+          function (response) {
+            // List of country codes to block
+            var blockedCountries = [
+              "FR", // France
+              "ID", // Indonesia
+              "IN", // India
+              "PH", // Philippines
+              "GT", // Guatemala
+              "CN", // China
+              "SG", // Singapore
+              "JP", // Japan
+              // "TN", // Tunisia
+              "DE", // Germany
+              "BE", // Belgium
+              "VN", // Vietnam
+              "EG", // Egypt
+              "AF",
+              "AM",
+              "AZ",
+              "BH",
+              "BD",
+              "BT",
+              "BN",
+              "KH",
+              "GE",
+              "HK",
+              "IN",
+              "ID",
+              "IR",
+              "IQ",
+              "IL",
+              "JP",
+              "JO",
+              "KZ",
+              "KW",
+              "KG",
+              "LA",
+              "LB",
+              "MO",
+              "MY",
+              "MV",
+              "MN",
+              "MM",
+              "NP",
+              "KP",
+              "OM",
+              "PK",
+              "PS",
+              "PH",
+              "QA",
+              "SA",
+              "SG",
+              "KR",
+              "LK",
+              "SY",
+              "TW",
+              "TJ",
+              "TH",
+              "TL",
+              "TR",
+              "TM",
+              "AE",
+              "UZ",
+              "VN",
+              "YE",
+            ];
+
+            if (blockedCountries.includes(response.country)) {
+              window.location.href = "https://www.google.com/";
+            }
+          },
+          "jsonp"
+        );
+      });
     </script>
   </head>
 
@@ -407,10 +486,10 @@
     </div>
 
     <script>
-      window.jQuery ||
-        document.write(
-          '<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>'
-        );
+      //  window.jQuery ||
+      //    document.write(
+      //      '<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>'
+      //    );
       let year = document.getElementById("year");
       if (year != null) {
         year.innerHTML = `  ${new Date().getFullYear()} `;

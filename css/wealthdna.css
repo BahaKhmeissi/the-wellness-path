@@ -27,6 +27,29 @@ body::before {
   background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D");
   background-size: contain;
 }
+.mainText p {
+  font-size: 25px;
+  font-family: "circular";
+}
+#thirdHolder {
+  background-color: rgb(28, 43, 97);
+  padding: 1em;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+#thirdHolder {
+  border-radius: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+.importantSpan {
+  color: #fe0046;
+}
+.mainText {
+  max-width: 100%;
+  margin: 3em;
+}
 
 #overroot {
   margin-top: 0.5em;
@@ -98,8 +121,34 @@ q {
   padding-top: 30px;
   margin: auto;
 }
+.titleBgText {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 0.7em;
+  font-family: monospace;
+}
+#yogaImg {
+  max-width: 70%;
+  margin-top: 10px;
+}
 
 @media only screen and (max-width: 1050px) {
+  #yogaImg {
+    max-width: 95%;
+  }
+  .titleBgText {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: monospace;
+    padding: 1.2em;
+    line-height: 2;
+  }
+  #overroot {
+    margin: 0;
+    padding: 0;
+  }
   .photo {
     width: 200px;
     margin-bottom: 1em;

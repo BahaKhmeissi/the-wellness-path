@@ -203,7 +203,6 @@ q {
   margin: auto;
 }
 
-
 #countdown #tiles > .fomo > span {
   width: 92px;
   max-width: 92px;
@@ -241,10 +240,12 @@ q {
   text-underline-offset: 5px;
   cursor: pointer;
   font-weight: bold;
+  background-color: black;
 }
 #brainWave {
   color: yellow;
 }
+
 @media only screen and (max-width: 1050px) {
   #thirdHolder {
     margin: 2px;
@@ -253,6 +254,7 @@ q {
   #secretQ {
     color: rgb(202, 0, 0);
     font-size: large;
+    background: none;
   }
   #theSecret {
     margin: 5px 1px 20px 1px !important;
