@@ -7,9 +7,8 @@ body {
   margin: 0;
   padding: 0;
   word-wrap: break-word;
-  background-color: #fffff0;
+  background-color: #c3e0e2;
 
-  background-size: cover;
   position: relative;
 }
 
@@ -20,13 +19,24 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url("https://static.vecteezy.com/system/resources/previews/010/879/691/non_2x/yoga-buddha-spiritual-meditation-graphic-png.png"); */
-  background-image: url("https://healthbalancedlife.com/hosted/images/96/47e1ff2f0a491cb91ce08081990d31/Fundo-GW-V2.png");
-  /* background-position: top; */
-  background-size: cover;
+  background-color: #fffff0;
+
+  background-size: contain;
   /* opacity: 0.9; */
   z-index: -1;
   pointer-events: none;
+
+  background: #00bf8f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #001510,
+    #00bf8f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #001510,
+    #00bf8f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #overroot {
@@ -38,18 +48,20 @@ body {
 }
 #secondHolder,
 #thirdHolder {
-  background-color: rgb(28, 43, 97);
+  background-size: contain;
   padding: 1em;
   font-size: 25px;
   text-align: center;
   color: white;
+  background-color: #19261f;
 }
 #thirdHolder {
   border-radius: 10px;
   width: fit-content;
   cursor: pointer;
+  background-image: url("/assets/images/greenbg.jpg");
+  background-size: cover;
 }
-
 #theSecret {
   margin-top: 1.5em;
   margin-bottom: 1em;
@@ -69,8 +81,8 @@ body {
   margin-bottom: 2em;
 }
 footer {
-  height: 350px;
-  background-color: #1c2b61;
+  height: 230px;
+  background-color: #153021;
 }
 
 #ritualTitle {
@@ -240,13 +252,20 @@ q {
   text-underline-offset: 5px;
   cursor: pointer;
   font-weight: bold;
-  background-color: black;
+  background-color: #19261f;
 }
 #brainWave {
   color: yellow;
 }
 
 @media only screen and (max-width: 1050px) {
+  #secondHolder,
+  #thirdHolder,
+  .pageTitle,
+  footer {
+    background-image: url("/assets/images/greenbg.jpg") !important;
+    background-size: cover !important;
+  }
   #thirdHolder {
     margin: 2px;
     font-size: 18px;
@@ -279,8 +298,6 @@ q {
   .pageTitle {
     padding: 0.5em;
     margin-bottom: 2.5em;
-    background-color: rgb(28, 43, 97);
-    /* background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D"); */
     background-size: contain;
   }
   .photo {
@@ -334,8 +351,6 @@ q {
   }
   #secondHolder {
     padding: 10px;
-    /* background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2UlMjBzdGFyc3xlbnwwfHwwfHx8MA%3D%3D"); */
-    background-size: contain;
   }
   #ritualTitle {
     font-size: 27px;
@@ -347,7 +362,7 @@ q {
     align-items: center;
   }
   footer {
-    height: 430px;
+    height: 330px;
     padding: 10px;
   }
   #facebookParagraph {
