@@ -24,7 +24,7 @@ body::before {
   pointer-events: none;
 }
 #titleBg {
-  background-image: url("/assets/images/bgreen2.jpg");
+  background-image: url("/assets/images/greenbg.jpg");
   background-size: cover;
 }
 .mainText p {
@@ -36,7 +36,7 @@ body::before {
   font-size: 25px;
   text-align: center;
   color: white;
-  background-image: url("/assets/images/bgreen2.jpg");
+  background-image: url("/assets/images/greenbg.jpg");
   background-size: cover;
 }
 #thirdHolder {
@@ -64,7 +64,7 @@ body::before {
 
 footer {
   height: 250px;
-  background-image: url("/assets/images/bgreen2.jpg");
+  background-image: url("/assets/images/greenbg.jpg");
   background-size: cover;
 }
 

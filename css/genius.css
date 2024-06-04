@@ -257,7 +257,7 @@ q {
   #thirdHolder,
   .pageTitle,
   footer {
-    background-image: url("/assets/images/bgreen2.jpg") !important;
+    background-image: url("/assets/images/greenbg.jpg") !important;
     background-size: cover !important;
   }
   #thirdHolder {
