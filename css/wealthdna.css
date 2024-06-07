@@ -24,11 +24,12 @@ body::before {
   pointer-events: none;
 }
 #titleBg {
-  background-image: url("/assets/images/greenbg.jpg");
-  background-size: cover;
+  background-color: #2e4c2e;
+  background-image: url("../assets/images/bgStars.avif");
+  background-size: contain;
 }
 .mainText p {
-  font-size: 25px;
+  font-size: 28px;
   font-family: "circular";
 }
 #thirdHolder {
@@ -36,8 +37,8 @@ body::before {
   font-size: 25px;
   text-align: center;
   color: white;
-  background-image: url("/assets/images/greenbg.jpg");
-  background-size: cover;
+  background-color: #2e4c2e;
+  scale: 1.2;
 }
 #thirdHolder {
   border-radius: 10px;
@@ -51,7 +52,13 @@ body::before {
   font-weight: bold;
   font-family: revert;
   text-decoration: underline;
-  color: #fe0046;
+  color: black;
+}
+.callToAc {
+  all: unset;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 40px;
 }
 .mainText {
   max-width: 100%;
@@ -64,8 +71,7 @@ body::before {
 
 footer {
   height: 250px;
-  background-image: url("/assets/images/greenbg.jpg");
-  background-size: cover;
+  background-color: #2e4c2e;
 }
 
 #ritualTitle {
@@ -133,8 +139,8 @@ q {
 .titleBgText {
   color: white;
   font-weight: bold;
-  font-size: 50px;
-  padding: 0.7em;
+  font-size: 45px;
+  padding: 1.1em;
   font-family: monospace;
 }
 #yogaImg {
@@ -151,6 +157,7 @@ q {
   #thirdHolder {
     font-size: 20px;
     margin: 2px;
+    scale: 1;
   }
   .activateTitle {
     font-weight: normal;
