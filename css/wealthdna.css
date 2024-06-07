@@ -24,7 +24,7 @@ body::before {
   pointer-events: none;
 }
 #titleBg {
-  background-color: #2e4c2e;
+  background-color: black;
   background-image: url("../assets/images/bgStars.avif");
   background-size: contain;
 }
