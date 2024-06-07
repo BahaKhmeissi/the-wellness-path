@@ -38,11 +38,12 @@ body::before {
   text-align: center;
   color: white;
   background-color: #2e4c2e;
-  scale: 1.2;
+  /* scale: 1.2; */
+  font-weight: bold;
 }
 #thirdHolder {
   border-radius: 10px;
-  width: fit-content;
+  /* width: fit-content; */
   cursor: pointer;
 }
 .importantSpan {
@@ -152,8 +153,16 @@ q {
 .goldy {
   color: gold;
 }
-
+#hrefHolder {
+  margin: 0 4em;
+}
 @media only screen and (max-width: 1050px) {
+  #hrefHolder {
+    margin: 0;
+  }
+  .callToAc {
+    font-size: 30px;
+  }
   #thirdHolder {
     font-size: 20px;
     margin: 2px;
@@ -164,6 +173,7 @@ q {
     font-size: 25px;
     padding: 0;
     line-height: 1.7;
+    margin: 0;
     margin-bottom: 1em;
   }
   .mainText {
@@ -354,4 +364,14 @@ button,
 .mod-head {
   font-size: 50px !important;
   line-height: 1.4em !important;
+}
+
+.no-hover-effect {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep text color same as parent */
+}
+
+.no-hover-effect:hover {
+  text-decoration: none; /* Ensure underline doesn't appear on hover */
+  color: inherit; /* Ensure text color doesn't change on hover */
 }
