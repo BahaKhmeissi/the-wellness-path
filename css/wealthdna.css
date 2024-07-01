@@ -33,17 +33,17 @@ body::before {
   font-family: "circular";
 }
 #thirdHolder {
-  padding: 1em;
-  font-size: 25px;
+  padding: 15px;
+  font-size: 35px;
   text-align: center;
   color: white;
-  background-color: #2e4c2e;
-  /* scale: 1.2; */
-  font-weight: bold;
+  background-color: #0547a9;
+  font-weight: bolder;
+  margin: auto;
 }
 #thirdHolder {
   border-radius: 10px;
-  /* width: fit-content; */
+  width: fit-content;
   cursor: pointer;
 }
 .importantSpan {
@@ -72,7 +72,8 @@ body::before {
 
 footer {
   height: 250px;
-  background-color: #2e4c2e;
+  background-image: url("../assets/images/bgStars.avif");
+  background-size: contain;
 }
 
 #ritualTitle {
@@ -133,7 +134,7 @@ q {
 }
 
 #facebookParagraph {
-  max-width: 50%;
+  max-width: 80%;
   padding-top: 30px;
   margin: auto;
 }
@@ -145,7 +146,7 @@ q {
   font-family: monospace;
 }
 #yogaImg {
-  max-width: 70%;
+  max-width: 80%;
   margin-top: 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -153,15 +154,23 @@ q {
 .goldy {
   color: gold;
 }
-#hrefHolder {
-  margin: 0 4em;
+.brainIcon {
+  width: 50px;
 }
+
 @media only screen and (max-width: 1050px) {
+  .mainText p {
+    font-size: 20px !important;
+  }
+
+  .brainIcon {
+    width: 20px;
+  }
   #hrefHolder {
     margin: 0;
   }
   .callToAc {
-    font-size: 30px;
+    font-size: 27px;
   }
   #thirdHolder {
     font-size: 20px;
@@ -184,7 +193,7 @@ q {
   .titleBgText {
     color: white;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 32px;
     font-family: monospace;
     padding: 0.99em;
     line-height: 1.7;

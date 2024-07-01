@@ -1,6 +1,6 @@
 var target_date = new Date().getTime() + 55 * 3600 * 48; // set the countdown date
 var days, hours, minutes, seconds; // variables for time units
-let june26Date = new Date(new Date().getFullYear(), 5, 26);
+let june26Date = new Date(new Date().getFullYear(), 7, 26);
 
 var countdown = document.getElementById("tiles"); // get tag element
 
