@@ -248,7 +248,8 @@ q {
 }
 img,
 button,
-#clickBtn {
+#clickBtn,
+#thirdHolder {
   transition: all 0.4s ease-in-out;
 }
 #supportImg,
@@ -382,4 +383,8 @@ button,
 .no-hover-effect:hover {
   text-decoration: none; /* Ensure underline doesn't appear on hover */
   color: inherit; /* Ensure text color doesn't change on hover */
+}
+
+#thirdHolder:hover {
+  scale: 1.05;
 }
