@@ -60,6 +60,7 @@ body::before {
   cursor: pointer;
   font-weight: bold;
   font-size: 40px;
+  color: #0547a9;
 }
 .mainText {
   max-width: 100%;
