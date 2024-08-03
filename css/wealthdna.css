@@ -25,7 +25,7 @@ body::before {
 }
 #titleBg {
   background-color: black;
-  background-image: url("../assets/images/bgStars.avif");
+  background-image: url("../assets/images/giphy.gif");
   background-size: contain;
 }
 .mainText p {
@@ -72,8 +72,8 @@ body::before {
 }
 
 footer {
-  height: 250px;
-  background-image: url("../assets/images/bgStars.avif");
+  height: 360px;
+  background-image: url("../assets/images/giphy.gif");
   background-size: contain;
 }
 
@@ -158,8 +158,16 @@ q {
 .brainIcon {
   width: 50px;
 }
+#scRef {
+  max-width: 50%;
+  cursor: pointer;
+  padding-top: 1em;
+}
 
 @media only screen and (max-width: 1050px) {
+  #scRef {
+    max-width: 100%;
+  }
   .mainText p {
     font-size: 20px !important;
   }
@@ -189,14 +197,14 @@ q {
     margin: 10px;
   }
   #yogaImg {
-    max-width: 95%;
+    max-width: 90%;
   }
   .titleBgText {
     color: white;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 25px;
     font-family: monospace;
-    padding: 0.99em;
+    padding: 2em 0.5em;
     line-height: 1.7;
   }
   #overroot {
@@ -240,11 +248,10 @@ q {
     align-items: center;
   }
   footer {
-    height: 330px;
-    /* padding: 10px; */
+    height: 460px;
   }
   #facebookParagraph {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 img,
