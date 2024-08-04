@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
         modContent
           .removeClass("modal-animated-in")
           .addClass("modal-animated-out")
-          .delay(300)
+          .delay(100)
           .queue(function (next) {
             modal.css("display", "none");
             next();
@@ -64,4 +64,3 @@ jQuery(document).ready(function ($) {
 
   $("");
 });
-
