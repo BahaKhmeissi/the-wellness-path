@@ -73,7 +73,7 @@ body::before {
 
 footer {
   height: 360px;
-  background-color: #000;
+  background-image: url("../assets/images/ConvertAI-Background-Stars-3.svg");
   background-size: contain;
 }
 
