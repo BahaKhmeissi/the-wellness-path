@@ -66,7 +66,7 @@ body {
   margin-bottom: 2em;
 }
 footer {
-  height: 750px;
+  height: 720px;
   background-color: #06307b;
 }
 
@@ -254,7 +254,13 @@ q {
   max-width: 70% !important;
 }
 
+ol li a {
+  color: gold;
+}
 @media only screen and (max-width: 1050px) {
+  ol {
+    padding: 1em;
+  }
   #gifBottom {
     max-width: 100% !important;
   }
@@ -271,9 +277,7 @@ q {
   footer,
   #secondHolder,
   #thirdHolder {
-    /* background-color: #06307b; */
-    background-image: url("/assets/images/bgStars.avif");
-    background-size: contain;
+    background-color: #06307b;
   }
   #thirdHolder {
     margin: 2px;
@@ -371,16 +375,17 @@ q {
     align-items: center;
   }
   footer {
-    height: 1270px;
+    height: 1250px;
     padding: 10px;
   }
   #facebookParagraph {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 img,
 button,
-#clickBtn {
+#clickBtn,
+#thirdHolder {
   transition: all 0.4s ease-in-out;
 }
 #supportImg,
@@ -388,10 +393,13 @@ button,
 .photo {
   cursor: pointer;
 }
-#mainImg:hover {
+#mainImg:hover,
+#gifBottom:hover,
+#thirdHolder:hover {
   transform: scale(1.008);
   -webkit-filter: brightness(70%);
 }
+
 #clickBtn:hover {
   transform: scale(1.03);
 }
