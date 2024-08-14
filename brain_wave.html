@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>The Wellness Path</title>
+    <meta
+      name="description"
+      content="Empower your journey with manifestation and abundance."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      itemprop="description"
+      content="Empower your journey with this unique  manifestation and abundance method"
+    />
+    <meta
+      name="description"
+      content="This method is going to change your financial destiny"
+    />
+
+    <meta name="author" content="Baha Khmeissi" />
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.jpg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="./css/templatemo-style.css" />
+    <link rel="stylesheet" href="./css/genius.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <script src="./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H3HG8PTT87"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-H3HG8PTT87");
+    </script>
+    <!-- Meta Pixel Code -->
+    <!-- <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "454431260477476");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=454431260477476&ev=PageView&noscript=1"
+    /></noscript> -->
+    <!-- End Meta Pixel Code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        URLModifier("tid");
+      });
+      function URLModifier(customKey) {
+        var searchKeyWord = "utm_campaign";
+        var searchKeyWordUrl = getParamFromURL(searchKeyWord);
+        if (searchKeyWordUrl) {
+          $("a").each(function () {
+            var currentLinkUrl = $(this).attr("href");
+            if (typeof currentLinkUrl !== "undefined") {
+              //Anchor Links
+              var modifiedUrl =
+                currentLinkUrl +
+                (currentLinkUrl.match(/\?/) ? "&" : "?") +
+                customKey +
+                "=" +
+                searchKeyWordUrl;
+              $(this).attr("href", modifiedUrl);
+            } // Image Links
+            else {
+              var currentImgLinkUrl = $(this).attr("data-imagelink");
+              var modifiedImgUrl =
+                currentImgLinkUrl +
+                (currentImgLinkUrl.match(/\?/) ? "&" : "?") +
+                customKey +
+                "=" +
+                searchKeyWordUrl;
+              $(this).attr("data-imagelink", modifiedImgUrl);
+            }
+          });
+          $("img").each(function () {
+            var currentLinkUrl = $(this).attr("data-imagelink");
+            if (typeof currentLinkUrl !== "undefined") {
+              //Anchor Links
+              var modifiedUrl =
+                currentLinkUrl +
+                (currentLinkUrl.match(/\?/) ? "&" : "?") +
+                customKey +
+                "=" +
+                searchKeyWordUrl;
+              $(this).attr("data-imagelink", modifiedUrl);
+            }
+          });
+        }
+      }
+      function getParamFromURL(t) {
+        var a = new RegExp("[?&]" + t + "=([^&#]*)").exec(window.location.href);
+        return null === a ? null : a[1];
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $.get(
+          "https://ipinfo.io?token=ca2d5e156e53a2",
+          function (response) {
+            // List of country codes to block
+            var blockedCountries = [
+              "FR", // France
+              "ID", // Indonesia
+              "IN", // India
+              "PH", // Philippines
+              "GT", // Guatemala
+              "CN", // China
+              "SG", // Singapore
+              "JP", // Japan
+              // "TN", // Tunisia
+              "DE", // Germany
+              "BE", // Belgium
+              "VN", // Vietnam
+              "EG", // Egypt
+              "AF",
+              "AM",
+              "AZ",
+              "BH",
+              "BD",
+              "BT",
+              "BN",
+              "KH",
+              "GE",
+              "HK",
+              "IN",
+              "ID",
+              "IR",
+              "IQ",
+              "IL",
+              "JP",
+              "JO",
+              "KZ",
+              "KW",
+              "KG",
+              "LA",
+              "LB",
+              "MO",
+              "MY",
+              "MV",
+              "MN",
+              "MM",
+              "NP",
+              "KP",
+              "OM",
+              "PK",
+              "PS",
+              "PH",
+              "QA",
+              "SA",
+              "SG",
+              "KR",
+              "LK",
+              "SY",
+              "TW",
+              "TJ",
+              "TH",
+              "TL",
+              "TR",
+              "TM",
+              "AE",
+              "UZ",
+              "VN",
+              "YE",
+            ];
+            if (blockedCountries.includes(response.country)) {
+              window.location.href = "https://www.google.com/";
+            }
+          },
+          "jsonp"
+        );
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="overroot" class="container">
+      <div id="root">
+        <div class="pageTitle">
+          <div class="pageSubTitle">
+            Discover the <span style="color: gold">Genius Brainwave</span> you
+            had as a kid That's Helping Thousands Live Their Best Lives
+          </div>
+        </div>
+        <div style="text-align: center">
+          <a
+            href="https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl"
+          >
+            <img
+              id="mainImg"
+              src="./assets/images/happykid2.jpg"
+              alt="clickhere"
+            />
+          </a>
+          <h1 id="theSecret">
+            <q id="secretQ"
+              >It's the secret we all had as kids but lost in the modern adult
+              world!</q
+            >
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="secondHolder">
+      <div
+        style="
+          color: gold;
+          margin: auto;
+          font-family: monospace;
+          font-weight: bold;
+        "
+      >
+        What You'll Learn in This Presentation
+      </div>
+    </div>
+    <div
+      class="container"
+      id="fourExp"
+      style="margin-top: 2em; margin-bottom: 2em"
+    >
+      <div
+        class="row"
+        style="margin-left: 0.01em; margin-right: 0.01em; margin-bottom: 3em"
+      >
+        <div class="col-md-5">
+          <h3 style="font-weight: bolder">
+            1. The Secret to Activating Childhood Genius
+          </h3>
+          <p>
+            Uncover the secret to unlocking the childhood genius within you and
+            rediscover your innate potential.
+          </p>
+          <div class="text-center">
+            <img
+              style="max-width: 60%; margin: auto"
+              src="/assets/images/s7img2.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div style="visibility: hidden" class="col-md-1">space</div>
+        <div class="col-md-5">
+          <h3 style="font-weight: bolder">2. Leaked NASA Research Reveals</h3>
+          <p>
+            The 7-Minute Brain Wave Ritual might sound crazy at first, but it's
+            caught the NASA's attention for its ability to make "impossible"
+            predictions.
+          </p>
+          <div class="text-center">
+            <img
+              style="max-width: 80%; margin: auto"
+              src="/assets/images/nasa.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+        style="
+          margin-left: 0.01em;
+          margin-right: 0.01em;
+          border-bottom: 2px solid black;
+          padding-bottom: 2em;
+        "
+      >
+        <div class="col-md-5">
+          <h3 style="font-weight: bolder">
+            3. Why Activating Theta Waves is Key to Success
+          </h3>
+          <p>
+            Unlocking Theta waves can amplify your mind's potential, making
+            success almost inevitable.
+          </p>
+          <div class="text-center">
+            <img
+              style="max-width: 50%; margin: auto"
+              src="/assets/images/s12bx1-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div style="visibility: hidden" class="col-md-1">space</div>
+        <div class="col-md-5">
+          <h3 style="font-weight: bolder">
+            4. NYC Neuroscientist Breaks Vow of Silence:
+          </h3>
+          <q style="color: red; font-size: 18px"
+            >Their attorneys are trying to shut this site down.</q
+          >
+          <p>
+            The results from NASA's biggest psychology study ever have left them
+            amazed.
+          </p>
+          <div class="text-center">
+            <img
+              style="max-width: 50%; margin: auto"
+              src="/assets/images/topsec.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container"
+      id="thirdHolder"
+      style="color: gold; font-weight: bold"
+    >
+      <a
+        href="https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl"
+        style="all: unset"
+        >👇 Tap Below to Reveal The Secrets to Wealth Before its gone 👇</a
+      >
+    </div>
+    <div id="lastSection" class="container text-center">
+      <div style="text-align: center; margin-bottom: 2em; margin-top: 2em">
+        <a
+          href="https://hop.clickbank.net/?affiliate=bahakh&vendor=geniusbr&pid=vsl"
+        >
+          <img
+            src="./assets/images/Vi_deo-preview-gift.gif"
+            alt="secret video"
+            style="cursor: pointer"
+            id="gifBottom"
+        /></a>
+      </div>
+      <div id="countdown">
+        <div
+          id="tiles"
+          class="text-center"
+          style="display: flex; justify-content: center"
+        ></div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <p id="pRef">
+          <img
+            src="./assets/images/Scientific Reference Logos 2.png"
+            id="footerImg"
+            alt="scientific refenrences"
+          />
+        </p>
+        <div class="container" style="color: white">
+          <h2 style="margin-bottom: 1em; color: gold" class="text-center">
+            Scientific references
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <ol>
+                <li>
+                  Venkatraman, R.. You're 96 Percent Less Creative Than You Were
+                  as a Child. Here's How to Reverse That. <br />
+                  <a
+                    target="_blank"
+                    rel=""
+                    href="https://www.inc.com/rohini-venkatraman/4-ways-to-get-back-creativity-you-had-as-a-kid.html"
+                    ><span style="font-family: Lora"
+                      >https://www.inc.com/rohini-venkatraman/4-ways-to-get-back-creativity-you-had-as-a-kid.html</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  Robinson, K. “Do Schools Kill Creativity?” <br /><a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://www.youtube.com/watch?v=iG9CE55wbtY"
+                    ><span style="font-family: Lora"
+                      >https://www.youtube.com/watch?v=iG9CE55wbtY</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  Uable, 28 August 2023. “The end of education.” <br /><a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://medium.com/@connect_75384/the-end-of-education-94f3a39fe97c"
+                    ><span style="font-family: Lora"
+                      >https://medium.com/@connect_75384/the-end-of-education-94f3a39fe97c</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  Herrmann, C. S., Strüber, D., Helfrich, R. F., & Engel, A. K.
+                  (2016). EEG oscillations: From correlation to causality.
+                  International Journal of Psychophysiology, 103, 12-21.
+                  <br /><a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://doi.org/10.1016/j.ijpsycho.2015.02.003"
+                    ><span style="font-family: Lora"
+                      >https://doi.org/10.1016/j.ijpsycho.2015.02.003</span
+                    ></a
+                  >
+                </li>
+              </ol>
+            </div>
+            <div class="col-lg-6">
+              <ol start="5">
+                <li>
+                  Crivelli-Decker, J., Hsieh, L.-T., Clarke, A., & Ranganath, C.
+                  (Year). Theta oscillations promote temporal sequence
+                  learning.Neurobiology of Learning and Memory, Volume
+                  Number(Page Numbers). <br /><a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://doi.org/10.1016/j.nlm.2018.05.001"
+                    ><span style="font-family: Lora"
+                      >https://doi.org/10.1016/j.nlm.2018.05.001</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  Zielinski, M. C., Tang, W., & Jadhav, S. P. (2020). The role
+                  of replay and theta sequences in mediating
+                  hippocampal-prefrontal interactions for memory and cognition.
+                  Hippocampus, 30(1), 60-72. <br /><a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://doi.org/10.1002/hipo.22821"
+                    ><span style="font-family: Lora"
+                      >https://doi.org/10.1002/hipo.22821</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  Henao, D., Navarrete, M., Valderrama, M., & Le Van Quyen, M.
+                  (2020). Entrainment and synchronization of brain oscillations
+                  to auditory stimulations.Neuroscience Research, 156, 271-278.
+                  <br />
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://doi.org/10.1016/j.neures.2020.03.004"
+                    ><span style="font-family: Lora"
+                      >https://doi.org/10.1016/j.neures.2020.03.004</span
+                    ></a
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <p class="hovWhite">Copyright &copy; ALl Rights Reserved</p>
+        <p class="hovWhite" style="padding-top: 10px; margin: 5px">
+          <a href="/"
+            >www.the-wellness-path.com @<span class="hovWhite" id="year"></span
+          ></a>
+        </p>
+        <p class="hovWhite" class="d-flex" style="margin: 0; padding-top: 10px">
+          <span><a href="./privacy">Privacy Policy</a></span>
+          &nbsp; <span>|</span> &nbsp;
+          <span><a href="./dmca">DMCA</a></span> &nbsp; <span>|</span> &nbsp;
+          <span
+            ><a href="./disclosure-agreement">Disclosure Agreements</a></span
+          >
+          &nbsp;<span>|</span> &nbsp;<span
+            ><a href="./terms">Terms of service</a></span
+          >
+        </p>
+        <div>
+          <p class="hovWhite" id="facebookParagraph">
+            All information provided is for educational use only. Always consult
+            with your doctor or primary care physician prior to starting any new
+            health or fitness routine. Additionally, this site is NOT endorsed
+            by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal button -->
+    <div class="popup-icon">
+      <button id="modBtn" class="modal-btn">
+        <img src="./assets/images/contact-icon.png" alt="" />
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="mod-head header-title">
+            Say hello to <em style="color: gold">The Welness Path</em>
+          </h3>
+          <div class="close-btn">
+            <img src="./assets/images/close_contact.png" alt="" />
+          </div>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="col-md-6 col-md-offset-3">
+            <form
+              id="contact"
+              action="https://getform.io/f/zbzomqpa"
+              method="POST"
+            >
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your name..."
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your email..."
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <textarea
+                      name="message"
+                      rows="6"
+                      class="form-control"
+                      id="message"
+                      placeholder="Your message..."
+                      required=""
+                    ></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button
+                      type="submit"
+                      id="form-submit"
+                      class="btn"
+                      style="color: gold"
+                    >
+                      Send Message Now
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //  window.jQuery ||
+      //    document.write(
+      //      '<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>'
+      //    );
+      let year = document.getElementById("year");
+      if (year != null) {
+        year.innerHTML = `  ${new Date().getFullYear()} `;
+      }
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/genuis.js"></script>
+  </body>
+</html>

@@ -7,8 +7,6 @@ body {
   margin: 0;
   padding: 0;
   word-wrap: break-word;
-  background-color: #c3e0e2;
-
   position: relative;
 }
 
@@ -19,23 +17,20 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: #fffff0; */
 
   background-size: contain;
-  /* opacity: 0.9; */
   z-index: -1;
   pointer-events: none;
 
-  background-image: url("/assets/images/bgreen2.jpg") !important;
+  background-image: url("/assets/images/gwbg.jpg") !important;
   background-size: cover !important;
 }
 
 #overroot {
   position: relative;
   width: 100%;
-  /* background-color: #d0f0fd; */
   padding-bottom: 2em;
-  /* height: 100%; */
+  margin-bottom: -3px;
 }
 #secondHolder,
 #thirdHolder {
@@ -44,16 +39,13 @@ body {
   font-size: 25px;
   text-align: center;
   color: white;
-  background-color: #19261f;
-  background-image: url("/assets/images/bgreen2.jpg") !important;
-  background-size: cover !important;
+  background-color: #06307b;
 }
 #thirdHolder {
   border-radius: 10px;
   width: fit-content;
   cursor: pointer;
-  background-image: url("/assets/images/bgreen2.jpg");
-  background-size: cover;
+  background-color: #06307b;
 }
 #theSecret {
   margin-top: 1.5em;
@@ -74,10 +66,8 @@ body {
   margin-bottom: 2em;
 }
 footer {
-  height: 230px;
-  /* background-color: #153021; */
-  background-image: url("/assets/images/bgreen2.jpg") !important;
-  background-size: cover !important;
+  height: 750px;
+  background-color: #06307b;
 }
 
 #ritualTitle {
@@ -172,7 +162,7 @@ q {
   font-family: monospace;
 }
 #mainImg {
-  max-width: 800px;
+  max-width: 45%;
   cursor: pointer;
 }
 .supportHolder {
@@ -234,7 +224,7 @@ q {
   margin: 0.3em !important;
 }
 #footerImg {
-  max-width: 500px;
+  max-width: 80%;
 }
 .firstSec {
   margin-bottom: 4em;
@@ -251,21 +241,39 @@ q {
 #brainWave {
   color: yellow;
 }
+.mainText p {
+  font-size: 28px;
+  font-family: "circular";
+}
+.mainText {
+  max-width: 100%;
+  margin: 3em;
+}
 
 @media only screen and (max-width: 1050px) {
+  .mainText p {
+    font-size: 20px !important;
+  }
+  .mainText {
+    margin: 10px;
+  }
+  .pageTitle {
+    background-image: url("/assets/images/blueStars.jpg");
+    background-size: contain;
+  }
+  footer,
   #secondHolder,
-  #thirdHolder,
-  .pageTitle,
-  footer {
-    background-image: url("/assets/images/greenbg.jpg") !important;
-    background-size: cover !important;
+  #thirdHolder {
+    /* background-color: #06307b; */
+    background-image: url("/assets/images/bgStars.avif");
+    background-size: contain;
   }
   #thirdHolder {
     margin: 2px;
     font-size: 18px;
   }
   #secretQ {
-    color: rgb(202, 0, 0);
+    color: black;
     font-size: large;
     background: none;
   }
@@ -356,7 +364,7 @@ q {
     align-items: center;
   }
   footer {
-    height: 330px;
+    height: 1270px;
     padding: 10px;
   }
   #facebookParagraph {
