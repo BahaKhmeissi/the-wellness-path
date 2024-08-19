@@ -40,12 +40,13 @@ body {
   text-align: center;
   color: white;
   background-color: #06307b;
-  display: block;
+
   font-weight: bolder;
 }
 #thirdHolder {
   border-radius: 10px;
   font-size: 34px;
+  display: block !important;
 
   cursor: pointer;
   background: #e52d27; /* fallback for old browsers */
