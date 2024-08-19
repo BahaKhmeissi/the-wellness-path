@@ -40,6 +40,8 @@ body {
   text-align: center;
   color: white;
   background-color: #06307b;
+  display: block;
+  font-weight: bolder;
 }
 #thirdHolder {
   border-radius: 10px;
@@ -517,4 +519,12 @@ button,
 .mod-head {
   font-size: 50px !important;
   line-height: 1.4em !important;
+}
+
+#thirdHolder {
+  text-decoration: none; /* Remove underline by default */
+}
+
+#thirdHolder:hover {
+  text-decoration: none; /* Ensure no underline on hover */
 }
