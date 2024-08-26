@@ -73,8 +73,9 @@ body::before {
 
 footer {
   height: 360px;
-  background-image: url("../assets/images/ConvertAI-Background-Stars-3.svg");
-  background-size: contain;
+  /* background-image: url("../assets/images/bgStars.avif");
+  background-size: contain; */
+  background-color: #000;
 }
 
 #ritualTitle {
@@ -147,7 +148,7 @@ q {
   font-family: monospace;
 }
 #yogaImg {
-  max-width: 90%;
+  max-width: 70%;
   margin-top: 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -222,7 +223,7 @@ q {
     margin: 10px;
   }
   #yogaImg {
-    max-width: 98%;
+    max-width: 88%;
   }
   .titleBgText {
     color: white;
