@@ -1,0 +1,552 @@
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  background-color: #c3e0e2;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/yogaBg.webp");
+  background-position: top;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+}
+#titleBg {
+  background-color: black;
+  background-image: url("../assets/images/bgStars.avif");
+  background-size: contain;
+}
+.mainText p {
+  font-size: 28px;
+  font-family: "circular";
+}
+#thirdHolder {
+  padding: 30px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  background-color: #046066;
+  font-weight: bolder;
+  margin: auto;
+}
+#thirdHolder {
+  border-radius: 10px;
+  width: fit-content;
+  cursor: pointer;
+}
+.importantSpan {
+  color: #fe0046;
+}
+.activateTitle {
+  font-weight: bold;
+  font-family: revert;
+  text-decoration: underline;
+  color: black;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+.callToAc {
+  all: unset;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+}
+.mainText {
+  max-width: 100%;
+  margin: 3em;
+}
+
+#overroot {
+  margin-top: 0.5em;
+}
+
+footer {
+  height: 260px;
+  /* background-image: url("../assets/images/bgStars.avif");
+    background-size: contain; */
+  background-color: #000;
+}
+
+#ritualTitle {
+  font-weight: bolder;
+  margin-bottom: 1.5em;
+  text-align: center;
+  color: red;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+#explore {
+  margin-bottom: 2em;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+q {
+  font-family: lora;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.pageTitle {
+  text-align: center;
+  padding: 3em;
+  font-weight: bolder;
+}
+
+.hovWhite :hover {
+  color: white !important;
+}
+.pageSubTitle {
+  font-size: 40px;
+  color: black;
+  width: 70%;
+  margin: auto;
+  font-weight: bolder;
+  /* line-height: 1.5em; */
+  font-family: Lato, sans-serif !important;
+}
+#mainImg {
+  max-width: 85%;
+  margin-top: 10px;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+.supportHolder {
+  text-align: center;
+  padding: 3em;
+  background-color: white;
+  text-align: center;
+}
+
+#facebookParagraph {
+  max-width: 80%;
+  padding-top: 30px;
+  margin: auto;
+}
+.titleBgText {
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  padding: 1.1em;
+  font-family: monospace;
+}
+#yogaImg {
+  max-width: 80%;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.goldy {
+  color: gold;
+}
+.brainIcon {
+  width: 50px;
+}
+#scRef {
+  max-width: 50%;
+  cursor: pointer;
+  padding-top: 1em;
+}
+#quizHolder {
+  background-color: #fe0046;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 12px;
+}
+.question,
+.question h4 {
+  margin: 1em;
+}
+
+@media only screen and (max-width: 1050px) {
+  .question {
+    margin: 0 0 2em 0;
+  }
+  .question h4 {
+    margin: 0 0 1em 0;
+  }
+
+  #scRef {
+    max-width: 100%;
+  }
+  .mainText p {
+    font-size: 20px !important;
+  }
+
+  .brainIcon {
+    width: 20px;
+  }
+  #hrefHolder {
+    margin: 0;
+  }
+  .callToAc {
+    font-size: 27px;
+  }
+  #thirdHolder {
+    font-size: 20px;
+    margin: 2px;
+    scale: 1;
+  }
+  #quizHolder {
+    font-size: 20px;
+    margin: 2px;
+    scale: 1;
+  }
+  .activateTitle {
+    font-weight: normal;
+    font-size: 25px;
+    padding: 0;
+    line-height: 1.7;
+    margin: 0;
+  }
+  .mainText {
+    margin: 10px;
+  }
+  #yogaImg {
+    max-width: 88%;
+  }
+  .titleBgText {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: monospace;
+    padding: 2em 0.5em;
+    line-height: 1.7;
+  }
+  #overroot {
+    margin: 0;
+    padding: 0;
+  }
+  .photo {
+    width: 200px;
+    margin-bottom: 1em;
+  }
+  #root {
+    /* max-width: 100% !important;
+      box-shadow: none;
+      font-size: 13px; */
+  }
+  h1 {
+    padding: 5px;
+  }
+  .pageSubTitle {
+    font-size: 32px;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  q {
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  #mainImg {
+    max-width: 98%;
+  }
+  #ritualTitle {
+    font-size: 27px;
+    margin-bottom: 1em;
+  }
+  .supportRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: 360px;
+  }
+  #facebookParagraph {
+    max-width: 100%;
+  }
+}
+img,
+button,
+#clickBtn,
+#thirdHolder,
+#quizModal {
+  transition: all 0.4s ease-in-out;
+}
+#supportImg,
+#nasaPic,
+.photo {
+  cursor: pointer;
+}
+#mainImg:hover {
+  transform: scale(1.03);
+  -webkit-filter: brightness(60%);
+}
+#clickBtn:hover {
+  transform: scale(1.03);
+}
+
+#countdown {
+  text-align: center;
+  margin: auto;
+  padding: 24px 0;
+  margin-bottom: 2em;
+}
+
+#countdown:before {
+  content: "";
+  width: 8px;
+  height: 65px;
+  background: #444;
+  background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
+  background-image: -moz-linear-gradient(top, #555, #444, #444, #555);
+  background-image: -ms-linear-gradient(top, #555, #444, #444, #555);
+  background-image: -o-linear-gradient(top, #555, #444, #444, #555);
+  border: 1px solid #111;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  display: block;
+  position: absolute;
+  top: 48px;
+  left: -10px;
+}
+
+#countdown:after {
+  content: "";
+  width: 8px;
+  height: 65px;
+  background: #444;
+  background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
+  background-image: -moz-linear-gradient(top, #555, #444, #444, #555);
+  background-image: -ms-linear-gradient(top, #555, #444, #444, #555);
+  background-image: -o-linear-gradient(top, #555, #444, #444, #555);
+  border: 1px solid #111;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: block;
+  position: absolute;
+  top: 48px;
+  right: -10px;
+}
+
+#countdown #tiles {
+  position: relative;
+  z-index: 1;
+}
+
+#countdown #tiles > .fomo > span:before {
+  content: "";
+  width: 100%;
+  height: 13px;
+  background: #111;
+  display: block;
+  padding: 0 3px;
+  position: absolute;
+  top: 41%;
+  left: -3px;
+  z-index: -1;
+}
+
+#countdown #tiles > .fomo > span:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #eee;
+  border-top: 1px solid #333;
+  display: block;
+  position: absolute;
+  top: 48%;
+  left: 0;
+}
+#countdown .labels {
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#countdown .labels li {
+  width: 102px;
+  font: bold 15px "Droid Sans", Arial, sans-serif;
+  color: #f47321;
+  text-shadow: 1px 1px 0px #000;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.time_data {
+  font: bold 15px "Droid Sans", Arial, sans-serif;
+  color: #f47321;
+  text-shadow: 1px 1px 0px #000;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+#gifBottom {
+  max-width: 100% !important;
+}
+
+.boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.mod-head {
+  font-size: 50px !important;
+  line-height: 1.4em !important;
+}
+
+.no-hover-effect {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Keep text color same as parent */
+}
+
+.no-hover-effect:hover {
+  text-decoration: none; /* Ensure underline doesn't appear on hover */
+  color: inherit; /* Ensure text color doesn't change on hover */
+}
+
+#thirdHolder:hover {
+  scale: 1.05;
+}
+#quizModal:hover {
+  scale: 1.05;
+}
+.survey-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.progress {
+  margin-bottom: 20px;
+}
+.question {
+  display: none;
+}
+.question.active {
+  display: block;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-container .btn {
+  width: 100px;
+}
+.analyzing {
+  display: none;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Modal background */
+.modalQuiz {
+  display: none; /* Initially hidden */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ModalQuiz is shown */
+.modalQuiz.show {
+  display: block;
+  opacity: 1;
+}
+
+/* ModalQuiz content */
+.modalQuiz-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  opacity: 1; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+/* ModalQuiz content is shown */
+.modalQuiz.show .modalQuiz-content {
+  opacity: 1;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.progress {
+  margin-bottom: 20px;
+}
+.progress-bar {
+  width: 0;
+  height: 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 10px;
+}
+.question {
+  display: none;
+}
+.question.active {
+  display: block;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-container .btn {
+  width: 100px;
+}
+.analyzing {
+  display: none;
+  text-align: center;
+}
+
+#finish-link.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
