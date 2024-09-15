@@ -211,6 +211,9 @@ ol li a {
   font-size: 23px !important;
 }
 @media only screen and (max-width: 1050px) {
+  .headerContainer {
+    padding: 0 !important;
+  }
   .withoutP {
     margin-bottom: 1em;
   }
@@ -242,7 +245,7 @@ ol li a {
     margin: 0 !important;
   }
   #pageHeadline {
-    font-size: 32px !important;
+    font-size: 30px !important;
     line-height: 1.4em;
   }
   .mainContent {
