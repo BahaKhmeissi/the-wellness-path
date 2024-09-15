@@ -210,7 +210,18 @@ ol li a {
 .withoutP p {
   font-size: 23px !important;
 }
+.wellPath {
+  background-color: #05746a;
+  padding: 10px;
+  padding-top: 15px;
+}
 @media only screen and (max-width: 1050px) {
+  .wellPath {
+    padding: 10px;
+  }
+  .logoFam {
+    font-size: 25px !important;
+  }
   .headerContainer {
     padding: 0 !important;
   }
@@ -218,7 +229,7 @@ ol li a {
     margin-bottom: 1em;
   }
   #curiousText {
-    font-size: 21px;
+    font-size: 19px;
     text-decoration: underline;
   }
   .mainContent {
