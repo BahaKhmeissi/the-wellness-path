@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  position: relative;
+}
+.logoFam {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px !important;
+}
+#pageHeadline {
+  font-weight: bold;
+  font-size: 45px;
+  font-family: system-ui;
+  line-height: 1.5em;
+}
+
+#lastSection {
+  margin-bottom: 2em;
+}
+
+#thirdHolder {
+  padding: 15px 30px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  /* background-color: #579b0d; */
+  font-weight: bolder;
+  margin: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#mainImage:hover {
+  transform: scale(1.008);
+  -webkit-filter: brightness(70%);
+}
+
+#mainImage {
+  cursor: pointer;
+}
+
+footer {
+  height: 220px;
+  background-color: #05746a;
+}
+footer p {
+  color: white !important;
+  font-weight: bold;
+}
+
+p {
+  color: black;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+#link {
+  text-decoration: inherit;
+  color: black;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  padding: 2em;
+  font-size: 1.5em;
+  background-color: #9e81f5;
+  opacity: 0.9;
+  border-radius: 16px;
+}
+
+#explore {
+  margin-bottom: 2em;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.pageTitle {
+  text-align: center;
+  padding: 3em;
+  font-weight: bolder;
+}
+
+#clickBtn {
+  all: unset;
+  cursor: pointer;
+  width: 85%;
+  padding: 20px;
+  font-weight: bold;
+  margin: auto;
+
+  border-radius: 10px;
+  font-size: 28px;
+  display: block;
+  background-color: red;
+  color: white;
+}
+
+.hovWhite :hover {
+  color: white !important;
+}
+.pageSubTitle {
+  font-size: 50px;
+  color: white;
+  width: 70%;
+  margin: auto;
+  font-weight: bolder;
+  line-height: 1.5em;
+  font-family: monospace;
+}
+#mainImg {
+  max-width: 45%;
+  cursor: pointer;
+}
+.supportHolder {
+  text-align: center;
+  padding: 3em;
+  background-color: white;
+  text-align: center;
+}
+.dr-james {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+#drJamesImg {
+  width: 185px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#nasaPic {
+  float: left;
+  width: 350px;
+}
+.nasa-text {
+  font-weight: bold;
+  line-height: 2.3;
+}
+.photo {
+  width: 12%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+#facebookParagraph {
+  max-width: 60%;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.fomoSpans {
+  display: block !important;
+  margin: 0.3em !important;
+}
+
+.firstSec {
+  margin-bottom: 4em;
+}
+#secretQ {
+  color: gold;
+  font-weight: bolder;
+  font-family: monospace;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#brainWave {
+  color: yellow;
+}
+.mainText p {
+  font-size: 28px;
+  font-family: "circular";
+}
+.mainText {
+  max-width: 100%;
+  margin: 3em;
+}
+
+#gifBottom {
+  max-width: 70% !important;
+}
+
+ol li a {
+  color: gold;
+}
+#headerTitle {
+  margin-bottom: 5em;
+  margin-top: 3em;
+}
+.mainT {
+  font-size: 32px;
+  margin-bottom: 1em;
+}
+.withoutP {
+  margin-bottom: 2em;
+}
+#wellnessPath {
+  margin-top: 0;
+  margin-left: 10%;
+}
+.mainContent {
+  margin-bottom: 5em;
+}
+#curiousText {
+  font-size: 25px;
+  text-decoration: underline;
+}
+.withoutP p {
+  font-size: 23px !important;
+}
+@media only screen and (max-width: 1050px) {
+  .withoutP {
+    margin-bottom: 1em;
+  }
+  #curiousText {
+    font-size: 25px;
+    text-decoration: underline;
+  }
+  .mainContent {
+    margin-bottom: 1em;
+  }
+  #wellnessPath {
+    margin: 0;
+    text-align: center;
+  }
+  .mainT {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  .withoutP p {
+    font-size: 23px !important;
+    margin-bottom: 2px;
+    margin-bottom: 1em;
+  }
+
+  #mainImage {
+    margin-bottom: 2em;
+  }
+  #headerTitle {
+    margin: 0 !important;
+  }
+  #pageHeadline {
+    font-size: 35px !important;
+    line-height: 1.4em;
+  }
+  .mainContent {
+    padding: 1em;
+  }
+  ol {
+    padding: 1em;
+  }
+  #gifBottom {
+    max-width: 100% !important;
+  }
+  .mainText p {
+    font-size: 20px !important;
+  }
+  .mainText {
+    margin: 10px;
+  }
+  .pageTitle {
+    background-image: url("/assets/images/blueStars.jpg");
+    background-size: contain;
+  }
+
+  #thirdHolder {
+    margin: 2px;
+    font-size: 25px;
+  }
+  #secretQ {
+    color: black;
+    font-size: large;
+    background: none;
+  }
+  #theSecret {
+    margin: 5px 1px 20px 1px !important;
+  }
+
+  #overroot::before {
+    opacity: 0.06;
+    z-index: 1;
+  }
+
+  .firstSec {
+    margin-bottom: 0em;
+  }
+
+  .fomoSpans {
+    width: 72px !important;
+    max-width: 72px !important;
+    margin: 10px !important;
+  }
+  .pageTitle {
+    padding: 0.5em;
+    margin-bottom: 2.5em;
+    background-size: contain;
+  }
+  .photo {
+    width: 200px;
+    margin-bottom: 1em;
+  }
+  #overroot {
+    padding: 0;
+  }
+  #root {
+    max-width: 100% !important;
+    box-shadow: none;
+    font-size: 13px;
+  }
+  h1 {
+    padding: 5px;
+  }
+  .pageSubTitle {
+    font-size: 26px;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: white;
+    padding: 5px;
+  }
+  #nasaPic {
+    width: 100%;
+  }
+  q {
+    font-size: 18px;
+    line-height: 2;
+  }
+  #drJamesImg {
+    width: 125px;
+  }
+  .dr-james {
+    font-size: 15px;
+  }
+  .ritualHolder {
+    margin: 1em;
+    padding: 2em;
+  }
+  .nasa-text {
+    font-weight: bold;
+    line-height: 2;
+    font-size: 18px;
+  }
+  #mainImg {
+    max-width: 97%;
+    /* margin-bottom: 1.5em; */
+  }
+  #secondHolder {
+    padding: 10px;
+  }
+  #ritualTitle {
+    font-size: 27px;
+    margin-bottom: 1em;
+  }
+  .supportRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: 330px;
+    padding: 10px;
+  }
+  #facebookParagraph {
+    max-width: 100%;
+  }
+}
+img,
+button,
+#clickBtn,
+#thirdHolder {
+  transition: all 0.4s ease-in-out;
+}
+#supportImg,
+#nasaPic,
+.photo {
+  cursor: pointer;
+}
+#mainImg:hover,
+#gifBottom:hover,
+#thirdHolder:hover {
+  transform: scale(1.008);
+  -webkit-filter: brightness(70%);
+}
+
+#clickBtn:hover {
+  transform: scale(1.03);
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Say Goodbye to Back Pain Today!</title>
+    <meta
+      name="description"
+      content="Discover the natural solution to relieve back pain and reclaim your life."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      itemprop="description"
+      content="Relieve back pain naturally and improve your overall well-being."
+    />
+    <meta
+      name="description"
+      content="This method will help you eliminate back pain and enhance your quality of life."
+    />
+
+    <meta name="title" content="Say Goodbye to Back Pain Today!" />
+
+    <meta property="og:title" content="Say Goodbye to Back Pain Today!" />
+
+    <meta name="author" content="The Wellness Path" />
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- <link
+      rel="shortcut icon"
+      href="./assets/images/brainIcon.webp"
+      type="image/x-icon"
+    /> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="./css/templatemo-style.css" />
+    <link rel="stylesheet" href="./css/back-tolife.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <script src="./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H3HG8PTT87"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-H3HG8PTT87");
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        URLModifier("tid");
+      });
+      function URLModifier(customKey) {
+        var searchKeyWord = "utm_campaign";
+        var searchKeyWordUrl = getParamFromURL(searchKeyWord);
+        if (searchKeyWordUrl) {
+          $("a").each(function () {
+            var currentLinkUrl = $(this).attr("href");
+            if (typeof currentLinkUrl !== "undefined") {
+              //Anchor Links
+              var modifiedUrl =
+                currentLinkUrl +
+                (currentLinkUrl.match(/\?/) ? "&" : "?") +
+                customKey +
+                "=" +
+                searchKeyWordUrl;
+              $(this).attr("href", modifiedUrl);
+            } // Image Links
+            else {
+              var currentImgLinkUrl = $(this).attr("data-imagelink");
+              var modifiedImgUrl =
+                currentImgLinkUrl +
+                (currentImgLinkUrl.match(/\?/) ? "&" : "?") +
+                customKey +
+                "=" +
+                searchKeyWordUrl;
+              $(this).attr("data-imagelink", modifiedImgUrl);
+            }
+          });
+          $("img").each(function () {
+            var currentLinkUrl = $(this).attr("data-imagelink");
+            if (typeof currentLinkUrl !== "undefined") {
+              //Anchor Links
+              var modifiedUrl =
+                currentLinkUrl +
+                (currentLinkUrl.match(/\?/) ? "&" : "?") +
+                customKey +
+                "=" +
+                searchKeyWordUrl;
+              $(this).attr("data-imagelink", modifiedUrl);
+            }
+          });
+        }
+      }
+      function getParamFromURL(t) {
+        var a = new RegExp("[?&]" + t + "=([^&#]*)").exec(window.location.href);
+        return null === a ? null : a[1];
+      }
+    </script>
+  </head>
+
+  <body>
+    <div style="background-color: #05746a; padding: 10px; padding-top: 15px">
+      <h2 id="wellnessPath">
+        <span class="logoFam" style="color: white">The Wellness</span>
+        <span class="logoFam" style="color: yellow; font-weight: bold"
+          >Path</span
+        >
+      </h2>
+    </div>
+    <div class="container">
+      <div id="headerTitle">
+        <h1 class="text-center" id="pageHeadline">
+          The Easy 30-Second Stretch That's Quickly Relieving
+          <span style="color: red">Back Pain</span> and Making Chiropractors
+          Nervous
+        </h1>
+      </div>
+    </div>
+    <div class="row mainContent">
+      <div class="col-lg-1 col-xs-12"></div>
+      <a href="https://hop.clickbank.net/?affiliate=Bahakh&vendor=btlife">
+        <img
+          src="/assets/images/backwom4.jpg"
+          id="mainImage"
+          class="col-lg-6 col-xs-12"
+      /></a>
+
+      <div
+        class="col-lg-4 col-xs-12"
+        id="mainText"
+        style="font-size: 30px; margin: auto"
+      >
+        <div class="mainT">
+          This Harvard Medical Breakthrough Helped Single Mom Meghan Banish
+          <span style="color: red">Persistent Back Pain</span>
+          Without:
+        </div>
+        <div class="withoutP">
+          <p>❌ Painful surgeries</p>
+          <p>❌ Costly chiropractor visits</p>
+          <p>❌ Changing her busy lifestyle</p>
+          <div id="curiousText" style="font-weight: bold">
+            And that's just the beginning of her story…
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="https://hop.clickbank.net/?affiliate=Bahakh&vendor=btlife"
+            class="no-hover-effect"
+            style="all: unset"
+            ><div id="thirdHolder" class="btn btn-success">
+              >> SEE HOW SHE DID IT ! <<
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <p class="hovWhite">Copyright &copy; ALl Rights Reserved</p>
+        <p class="hovWhite" style="padding-top: 10px; margin: 5px">
+          <a href="./home"
+            >www.the-wellness-path.com @<span class="hovWhite" id="year"></span
+          ></a>
+        </p>
+        <p class="hovWhite" class="d-flex" style="margin: 0; padding-top: 10px">
+          <span><a target="_blank" href="./privacy">Privacy Policy</a></span>
+          &nbsp; <span>|</span> &nbsp;
+          <span><a target="_blank" href="./dmca">DMCA</a></span> &nbsp;
+          <span>|</span> &nbsp;
+          <span
+            ><a target="_blank" href="./disclosure-agreement"
+              >Disclosure Agreements</a
+            ></span
+          >
+          &nbsp;<span>|</span> &nbsp;<span
+            ><a target="_blank" href="./terms">Terms of service</a></span
+          >
+        </p>
+        <div>
+          <p class="hovWhite" id="facebookParagraph">
+            All information provided is for educational use only. Always consult
+            with your doctor or primary care physician prior to starting any new
+            health or fitness routine. Additionally, this site is NOT endorsed
+            by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal button -->
+    <div class="popup-icon">
+      <button id="modBtn" class="modal-btn">
+        <img src="./assets/images/contact_message.webp" alt="" />
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="mod-head header-title">
+            Say hello to <em style="color: aqua">The Welness Path</em>
+          </h3>
+          <div class="close-btn">
+            <img src="./assets/images/close_contact.png" alt="" />
+          </div>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="col-md-6 col-md-offset-3">
+            <form
+              id="contact"
+              action="https://getform.io/f/zbzomqpa"
+              method="POST"
+            >
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your name..."
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your email..."
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <textarea
+                      name="message"
+                      rows="6"
+                      class="form-control"
+                      id="message"
+                      placeholder="Your message..."
+                      required=""
+                    ></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button
+                      type="submit"
+                      id="form-submit"
+                      class="btn"
+                      style="color: aqua"
+                    >
+                      Send Message Now
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>'
+        );
+      let year = document.getElementById("year");
+      if (year != null) {
+        year.innerHTML = `  ${new Date().getFullYear()} `;
+      }
+    </script>
+    <script src="./js/main.js"></script>
+    <!-- <script src="./js/mainQui.js"></script> -->
+  </body>
+</html>
