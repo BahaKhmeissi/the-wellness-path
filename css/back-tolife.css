@@ -26,7 +26,7 @@ body {
 
 #thirdHolder {
   padding: 15px 30px;
-  font-size: 35px;
+  font-size: 32px;
   text-align: center;
   color: white;
   /* background-color: #579b0d; */
@@ -186,12 +186,14 @@ ol li a {
   color: gold;
 }
 #headerTitle {
-  margin-bottom: 5em;
+  margin-bottom: 4em;
   margin-top: 3em;
 }
 .mainT {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 1em;
+  font-family: "circular";
+  /* font-weight: bold; */
 }
 .withoutP {
   margin-bottom: 2em;
@@ -204,7 +206,7 @@ ol li a {
   margin-bottom: 5em;
 }
 #curiousText {
-  font-size: 25px;
+  font-size: 24px;
   text-decoration: underline;
 }
 .withoutP p {
