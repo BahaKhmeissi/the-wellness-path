@@ -16,7 +16,7 @@ body {
 #pageHeadline {
   font-weight: bold;
   font-size: 45px;
-  font-family: system-ui;
+  font-family: auto;
   line-height: 1.5em;
 }
 
