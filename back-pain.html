@@ -161,49 +161,6 @@
         </h1>
       </div>
     </div>
-    <div class="row mainContent">
-      <div class="col-lg-2 col-xs-12"></div>
-      <a href="https://hop.clickbank.net/?affiliate=Bahakh&vendor=btlife">
-        <img
-          src="/assets/images/backP3.jpg"
-          id="mainImage"
-          class="col-lg-5 col-xs-12"
-      /></a>
-
-      <div class="col-lg-4 col-xs-12" id="mainText" style="margin: auto">
-        <div class="mainT">
-          Back Pain Controlled My Life for Years Until This One Simple Technique
-          Set Me Free...
-        </div>
-        <div class="withoutP">
-          <p style="text-decoration: underline; font-weight: bold">
-            No need for:
-          </p>
-          <p>❌ Painful surgeries</p>
-          <p>❌ Costly chiropractor visits</p>
-          <p>❌ Disrupting my daily life</p>
-          <div id="curiousText" style="font-weight: bold">
-            And the best part? It was so easy…
-          </div>
-        </div>
-        <!-- <div class="text-center">
-          <a
-            href="https://hop.clickbank.net/?affiliate=Bahakh&vendor=btlife"
-            class="no-hover-effect"
-            style="all: unset"
-            ><div id="thirdHolder" class="btn btn-success">
-              Discover How I Did It !
-            </div>
-          </a>
-        </div>
-      </div> -->
-        <div class="text-center">
-          <button class="btn btn-success" id="hibutch" onclick="openPopup()">
-            connect with oidc
-          </button>
-        </div>
-      </div>
-    </div>
 
     <footer>
       <div>
@@ -238,90 +195,6 @@
       </div>
     </footer>
 
-    <!-- Modal button -->
-    <div class="popup-icon">
-      <button id="modBtn" class="modal-btn">
-        <img src="./assets/images/contact_message.webp" alt="" />
-      </button>
-    </div>
-
-    <!-- Modal -->
-    <div id="modal" class="modal">
-      <!-- Modal Content -->
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h3 class="mod-head header-title">
-            Say hello to <em style="color: aqua">The Welness Path</em>
-          </h3>
-          <div class="close-btn">
-            <img src="./assets/images/close_contact.png" alt="" />
-          </div>
-        </div>
-        <!-- Modal Body -->
-        <div class="modal-body">
-          <div class="col-md-6 col-md-offset-3">
-            <form
-              id="contact"
-              action="https://getform.io/f/zbzomqpa"
-              method="POST"
-            >
-              <div class="row">
-                <div class="col-md-12">
-                  <fieldset>
-                    <input
-                      name="name"
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your name..."
-                      required=""
-                    />
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <input
-                      name="email"
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Your email..."
-                      required=""
-                    />
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <textarea
-                      name="message"
-                      rows="6"
-                      class="form-control"
-                      id="message"
-                      placeholder="Your message..."
-                      required=""
-                    ></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <button
-                      type="submit"
-                      id="form-submit"
-                      class="btn"
-                      style="color: aqua"
-                    >
-                      Send Message Now
-                    </button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script>
       window.jQuery ||
         document.write(
@@ -343,12 +216,17 @@
       );
 
       if (popup) {
-        // Close the popup after 5 seconds (5000 milliseconds) and reload the iframe
+        // Close the popup after 7 seconds and notify the parent
         setTimeout(() => {
           popup.close();
-          // Reload the iframe
-          window.location.href = "/home2.html";
-          console.log("iframe reloaded");
+          // Notify the parent window
+          window.parent.postMessage(
+            {
+              type: "popupClosed",
+              message: "Popup closed successfully!",
+            },
+            "*"
+          );
         }, 7000);
       } else {
         alert("Popup was blocked! Please allow popups for this website.");
