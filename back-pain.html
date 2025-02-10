@@ -207,6 +207,15 @@
     </script>
     <script src="./js/main.js"></script>
     <script>
+      window.parent.postMessage(
+        {
+          type: "popupClosed",
+          message: "Popup closed successfully!",
+        },
+        "*"
+      );
+    </script>
+    <!-- <script>
       // Open the popup
       document.body.classList.add("hidden");
       const popup = window.open(
@@ -231,7 +240,7 @@
       } else {
         alert("Popup was blocked! Please allow popups for this website.");
       }
-    </script>
+    </script> -->
     <!-- <script src="./js/mainQui.js"></script> -->
   </body>
 </html>
