@@ -342,12 +342,13 @@
           "width=600,height=600"
         );
 
-        // Check if the popup was blocked
         if (popup) {
-          // Close the popup after 5 seconds (5000 milliseconds)
+          // Close the popup after 5 seconds (5000 milliseconds) and reload the page
           setTimeout(() => {
             popup.close();
-          }, 10000);
+            // Reload the current page
+            location.reload();
+          }, 5000);
         } else {
           alert("Popup was blocked! Please allow popups for this website.");
         }
