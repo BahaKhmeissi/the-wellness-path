@@ -343,11 +343,12 @@
         );
 
         if (popup) {
-          // Close the popup after 5 seconds (5000 milliseconds) and reload the page
+          // Close the popup after 5 seconds (5000 milliseconds) and reload the iframe
           setTimeout(() => {
             popup.close();
-            // Reload the current page
-            location.reload();
+            // Reload the iframe
+            window.location.reload();
+            console.log("iframe reloaded");
           }, 5000);
         } else {
           alert("Popup was blocked! Please allow popups for this website.");
