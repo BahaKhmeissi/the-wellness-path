@@ -353,10 +353,14 @@
       //    alert("Popup was blocked! Please allow popups for this website.");
       //  }
       if (window.opener) {
-        window.opener.postMessage(
-          "popupCompleted",
-          "https://baha-dev.felcloud.io"
-        );
+        const allowedOrigins = [
+          "https://baha-dev.felcloud.io",
+          "https://demo.felcloud.io",
+        ];
+
+        allowedOrigins.forEach((origin) => {
+          window.opener.postMessage("popupCompleted", origin);
+        });
       }
     </script>
     <!-- <script src="./js/mainQui.js"></script> -->
